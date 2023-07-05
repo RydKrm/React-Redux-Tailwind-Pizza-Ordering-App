@@ -28,16 +28,16 @@ const router = createBrowserRouter([
         element: <Cart />,
       },
       {
-        path: "order",
+        path: "/order",
         element: <Order />,
       },
       {
-        path: "order/new",
+        path: "/order/new",
         element: <CreateOrder />,
         action: createOrderAction,
       },
       {
-        path: "order/:orderId",
+        path: "/order/:orderId",
         element: <OrderItem />,
         loader: orderLoader,
         errorElement: <Error/>,
@@ -46,7 +46,12 @@ const router = createBrowserRouter([
   },
 ]);
 function App() {
-  return <RouterProvider router={router} />
+  return (
+    <>
+    <h2 className="text-2xl bg-green-700 ">Home Page made</h2>
+    <RouterProvider router={router}> </RouterProvider>
+    </>
+  );
 }
 
 export default App;
