@@ -48,7 +48,6 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
-    <h2 className="text-2xl bg-green-700 ">Home Page made</h2>
     <RouterProvider router={router}> </RouterProvider>
     </>
   );
